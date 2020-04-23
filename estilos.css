@@ -4,7 +4,9 @@ html, body{
 	height: 100%;
 	width: 100%;
 	color: #222;
-	font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  scroll-behavior: smooth;
 }
 
 .navbar{
@@ -148,11 +150,38 @@ hr.light-100{
 	margin-bottom: 1rem;
 }
 
+@media (min-width: 1024px){
+  .fa-caret-up{
+    color: white;
+    border-radius: 5px;
+    font-size: 5rem;
+    background-color: #3f73e6;
+    width: 60%;
+    height: 70%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .arrow-fadeOut{
+    visibility: hidden;
+    opacity: 0.1;
+    transition: 0.5s ease;
+  }
+  .arrow-fadeIn{
+    opacity: 0.8;
+    transition: 0.7s ease;
+  }
+  #arrowBtn:hover{
+    background-color: #779ae6;
+    transition: 0.7s ease-out;
+  }
+}
+
 @media (max-width: 992px){
 	.social a{
 		font-size: 4em;
 		padding: 2rem;
-	}
+  }
+  
 }
 
 @media(max-width: 768px){

@@ -25,6 +25,4 @@ document.getElementById("arrow").addEventListener("click",function(){
 
 document.addEventListener('scroll', function (){
   scrollUp();
-})
-
-scrollTotop => { }
+});
